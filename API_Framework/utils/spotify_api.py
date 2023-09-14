@@ -70,7 +70,7 @@ def get_track_info(track_id, access_token):
 
 def invalid_search_artist(artist_name, access_token):
     """
-    This function search for the artists for the given artist name return its response
+    This function search for the artists with invalid params
     """
     headers = {"Authorization": f"Bearer {access_token}"}
     params = {"query": artist_name, "type": "797679", "limit": 1, "value": "dummy"}
@@ -79,7 +79,7 @@ def invalid_search_artist(artist_name, access_token):
 
 def search_artist_with_dummy(artist_name, access_token):
     """
-    This function search for the artists for the given artist name return its response
+    This function search for the artists with invalid credentials
     """
     headers = {"Authorization": f"Bearer {access_token}"}
     params = {"query": artist_name, "type": "797679", "limit": 1, "value": "dummy"}
